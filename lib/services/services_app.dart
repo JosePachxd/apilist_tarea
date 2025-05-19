@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/noticias.dart';
 
 class NoticiaServices {
-  static const String _baseUrl = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=300e83b8ce1b47689e7d5a4da33f0038';
+  static const String _baseUrl = 'https://newsapi.org/v2/everything?q=bitcoin&apiKey=6aa3fddbb3584389bab5f14a6d07c204';
 
   Future<Noticias> fetchNoticias() async {
     final response = await http.get(Uri.parse(_baseUrl));
